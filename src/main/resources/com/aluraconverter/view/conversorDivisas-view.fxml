@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" prefHeight="459.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aluraconverter.controller.ConversorDivisasController">
+   <children>
+      <Pane fx:id="pane1" layoutX="205.0" layoutY="112.0" prefHeight="300.0" prefWidth="376.0">
+         <children>
+            <Label fx:id="monedaText1" layoutX="182.0" layoutY="103.0" text="To" />
+            <ChoiceBox fx:id="choiceBoxDivisa1" layoutX="111.0" layoutY="70.0" onAction="#setFlag1" prefHeight="25.0" prefWidth="155.0" />
+            <ChoiceBox fx:id="choiceBoxDivisa2" layoutX="112.0" layoutY="128.0" onAction="#setFlag2" prefHeight="25.0" prefWidth="155.0" />
+            <TextField fx:id="txtValor1" layoutX="111.0" layoutY="37.0" prefHeight="25.0" prefWidth="155.0" />
+            <TextField fx:id="txtValor2" disable="true" layoutX="110.0" layoutY="174.0" prefHeight="25.0" prefWidth="155.0" />
+            <Button fx:id="btnConvert" layoutX="110.0" layoutY="221.0" mnemonicParsing="false" onAction="#convertirDivisa" prefHeight="43.0" prefWidth="155.0" text="Convertir">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="imgFlag1" fitHeight="30.0" fitWidth="30.0" layoutX="71.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgFlag2" fitHeight="30.0" fitWidth="30.0" layoutX="71.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="102.0" fitWidth="101.0" layoutX="303.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/divisas3d.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="47.0" prefHeight="35.0" prefWidth="312.0" text="Allura Converter Challenge" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="210.0" fitWidth="155.0" layoutX="82.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3dperson.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="returnHome" fitHeight="62.0" fitWidth="46.0" layoutX="725.0" layoutY="399.0" onMouseClicked="#backHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/flecha.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

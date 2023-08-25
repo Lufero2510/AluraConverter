@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aluraconverter.controller.MainController">
+    <children>
+        <Pane fx:id="pane1" layoutX="205.0" layoutY="112.0" prefHeight="300.0" prefWidth="376.0">
+            <children>
+            <ImageView fx:id="btn1" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/btn3D_2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="btn2" fitHeight="205.0" fitWidth="200.0" layoutX="88.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/btn3D.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-86.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/3dpersona3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelTemp" layoutX="137.0" layoutY="75.0" onMousePressed="#btnCambio" onMouseReleased="#btnCambio2" text="Temperatura">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fx:id="btn3" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/btn3D_2.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="btn4" fitHeight="205.0" fitWidth="200.0" layoutX="88.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/btn3D.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelDivisa" layoutX="160.0" layoutY="168.0" onMousePressed="#btnCambio3" onMouseReleased="#btnCambio4" text="Divisas">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            </children>
+        </Pane>
+        <ImageView fitHeight="67.0" fitWidth="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/Logo.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="47.0" prefHeight="35.0" prefWidth="312.0" text="Allura Converter Challenge" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font></Label>
+    </children>
+
+</AnchorPane>

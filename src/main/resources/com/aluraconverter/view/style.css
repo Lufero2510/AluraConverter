@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
+
+.root{
+    -fx-background-color : #FFFFFF;
+}
+#pane1{
+
+    -fx-background-color : #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-color: #154c79;
+    -fx-border-width: 2.5px;
+    -fx-border-radius: 10px;
+}
+.button, #choiceBoxDivisa1, #choiceBoxDivisa2, #choiceBoxTemperature1, #choiceBoxTemperature2{
+    -fx-background-color : #154c79;
+    -fx-text-fill : #FFFFFF;
+    -fx-font-weight : BOLD;
+    -fx-background-radius: 60px;
+    -fx-font-family:'PT Sans', sans-serif;
+
+}
+#label1{
+    -fx-text-fill : #154c79;
+    -fx-font-family:'PT Sans', sans-serif;
+}
+
+#labelTemp, #labelDivisa {
+    -fx-text-fill : #ffffff;
+    -fx-font-weight : BOLD;
+    -fx-font-family:'PT Sans', sans-serif;
+}
+
+.choice-box>.label { -fx-text-fill: #FFFFFF; }
+
+
